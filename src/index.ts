@@ -1,11 +1,10 @@
 import { createClient, AgentEvents } from "@deepgram/sdk";
 import { WebSocket } from "ws";
-import * as http from "http";
-import * as fs from "fs";
-import * as path from "path";
+import * as http from "node:http";
+import * as fs from "node:fs";
+import * as path from "node:path";
 import * as dotenv from "dotenv";
 
-// Load environment variables
 dotenv.config();
 
 const DEEPGRAM_API_KEY = process.env.DEEPGRAM_API_KEY;
