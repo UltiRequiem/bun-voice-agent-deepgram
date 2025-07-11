@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "ts-node src/index.ts",
     "test": "jest",
-    "dev": "ts-node-dev --respawn src/index.ts"
+    "dev": "bun run --hot src/index.ts"
   },
   "keywords": [
     "deepgram",
